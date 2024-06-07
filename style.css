@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+}
+
+html, body {
+  height: 300vh;
+  width: 100%;
+  background-color: white;
+  transition: 0.3s;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #63b79f;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: #f58f82;
+}
+#faixa {
+  position: relative;
+  bottom: 610px;
+  width: 100%;
+  height: fit-content;
+  max-height: 2rem;
+  font-size: 0.85rem;
+  text-align: center;
+  align-items: center;
+  margin: 1px;
+  color: white;
+  background-color: #f58f82;
+}
+/* HEADER */
+header {
+  position: relative;
+  padding: 0 2rem;
+  box-shadow: 0.5px 0.5px 10px 0.5px #000;
+}
+
+.navbar {
+  width: 85%;
+  height: 25vh;
+  max-width: 1200px;
+
+  font-size: 1rem;
+  font-variant: small-caps;
+  font-weight: bold;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+i {
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #63b79f;
+
+}
+i:hover {
+  scale: 1.1;
+  color: #f58f82;
+}
+.logo a img {
+  width: 20vh;
+  height: 20vh;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+.links img {
+  height: 5vh;
+  width: 5vh;
+}
+
+.search-box-input {
+  height: fit-content;
+  border: 0.5px solid brown;
+  border-radius: 10px;
+  width: auto;
+}
+
+.navbar .toggle_btn {
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  width: fit-content;
+}
+
+.action-btn {
+  height: 40px;
+  background-color: black;
+  color: black;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+  scale: 1.1;
+  color: #f58f82;
+}
+
+.action_btn:active {
+  scale: 0.95;
+}
+
+/* DROPDOWN MENU */
+.dropdown_menu {
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  width: 300px;
+  height: 0;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+  height: 240px;
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu .action-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.fa-bars, .fa-xmark{
+    position: absolute;
+    right: 2.5vh;
+    top: 10vh;
+}
+.fa-moon,.fa-sun{
+        position: absolute;
+        right: 10vh;
+        top: 10vh;
+}
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1022px) {
+  /* responsive menu cabeçalho */
+  .navbar .links,
+  .navbar .action-btn {
+    display: none;
+  }
+  .navbar .toggle_btn {
+    display: block;
+  }
+  .dropdown_menu {
+    display: block;
+  }
+  /* responsive carousel */
+  .img-desktop {
+    display: none;
+  }
+  .img-mobile {
+    display: block;
+  }
+  .nav-auto,
+  .nav-manual {
+    margin-top: 35%;
+    /* distância igual ao colocado no radio */
+  }
+}
+
+@media (max-width: 576px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+}
+
+/* SLIDER */
+section.slider {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.slider-content {
+  width: 400%;
+  height: auto;
+  display: flex;
+}
+.slider-content input,
+.img-mobile {
+  display: none;
+}
+
+.slide-box {
+  width: 25%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  transition: 1s;
+}
+
+.nav-manual,
+.nav-auto {
+  position: absolute;
+  width: 100%;
+  margin-top: 35%; /* testar distância dos bullets */
+  justify-content: center;
+  display: flex;
+  align-self: center;
+}
+
+.nav-manual .manual-btn,
+.nav-auto div {
+  border: 1px solid #f58f82;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child),
+.nav-auto div:not(:last-child) {
+  margin-right: 10px;
+}
+.nav-manual .manual-btn:hover {
+  background-color: #f58f82;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1,
+#radio2:checked ~ .nav-auto .auto-btn1,
+#radio3:checked ~ .nav-auto .auto-btn1 {
+  background-color: #f58f82;
+}
+/* colorir quando o radio estiver checkado*/
+/* deve ser radio com a quantidade de imagens no carousel */
+
+#radio1:checked ~ .slide-box primeiro {
+  margin-left: 0%;
+}
+#radio2:checked ~ .slide-box primeiro {
+  margin-left: -25%;
+}
+#radio3:checked ~ .slide-box primeiro {
+  margin-left: -50%;
+}
+
+
+/* light/ DARK MODE */
+input[type="checkbox"]{
+    display: none;
+}
+.dark,
+.dark header{
+    background-color: #263238;
+    color: white;
+}
+/* <i> junto com header */
+
+.fa-moon {
+    display: none;
+}
+
+.dark .fa-sun {
+    display: none;
+}
+.dark .fa-moon {
+    display: block;
+    color: white;
+}
+.dark .fa-moon:hover{
+    color:#f58f82
+}

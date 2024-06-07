@@ -1,0 +1,149 @@
+<html>
+<head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial scale=1.0" />
+        <link   rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+                integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <title> Aline Gomes Artesanatos</title>
+</head>
+<body>
+    <header>
+
+        <nav><div class="navbar">
+            <div class="logo"> <a href="#"><img src="img/Logo.png" alt="Logo"></a> </div>
+            
+             <ul class="links"> 
+                <li><a href="#">PROMOÇÕES</a></li>
+                <li><A HREF="#">CONTATO</A></li>
+                <li><a href="#">QUEM SOMOS</a></li>
+                <li> <a href="https://shopee.com.br/"><i class="fa-brands fa-shopify" style="color: #63B79F;"></i></a></li>
+                <li> <a href="https://www.instagram.com/alinegomesartesanatos/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li> <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li> <a href="#"><i class="fa-solid fa-user"></i></a></li>
+                <li> <a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="box-busca">
+                        <form method="post" action="#">
+                                <input type="text" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa">
+                                <button class="search-box-button"><i  class="search-box-icone icon icon-search"></i></button>
+                        </form>
+                    </li>
+            </ul>
+        </div>
+        <!-- dark mode activator -->
+        <div>
+            <input type="checkbox" name="chance-theme" id="change-theme"/>
+            <label for="change-theme">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-regular fa-sun"></i>
+            </label>
+        </div>
+            <a href="#" class="action_btn"> </a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars" style="color: #63E6BE;"></i>
+            </div>
+
+
+       <div class="dropdown_menu">
+                <li><a href="#">PROMOÇÕES</a></li>
+                <li><a HREF="#">CONTATO</a></li>
+                <li><a href="#">QUEM SOMOS</a></li>
+                <li> <a href="https://shopee.com.br/"><i class="fa-brands fa-shopify" style="color: #63B79F;"></i></a></li>
+                <li> <a href="https://www.instagram.com/alinegomesartesanatos/"><i class="fa-brands fa-instagram" style="color: #63B79F;"></i></a></li>
+                <li> <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp" style="color: #63B79F;"></i></a></li>
+                <li> <a href="#"><i class="fa-solid fa-user" style="color: #63B79F;"></i></a></li>
+                <li> <a href="#"><i class="fa-solid fa-cart-shopping" style="color:#63B79F;"></i></a></li>
+                <li class="box-busca">
+                        <form method="post" action="#">
+                                <input type="text" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa">
+                                <button class="search-box-button"><i  class="search-box-icone icon icon-search"></i></button>
+                        </form>
+                    </li>
+        </nav></div>
+</header>
+<main>
+    <!-- Carousel -->
+<section class="slider">
+   <div class="slider-content">
+        <input type="radio" name="btn-radio" id="radio1" >
+        <input type="radio" name="btn-radio" id="radio2" >
+        <input type="radio" name="btn-radio" id="radio3" >
+
+        <div class="slide-box primeiro">
+            <a href="#"><img class="img-desktop" src="https://picsum.photos/seed/picsum/1800/600"> </a>
+            <a href="#"><img class="img-mobile" src="https://picsum.photos/seed/picsum/1040/600"> </a>
+        </div>
+        <div class="slide-box">
+            <a href="#"><img class="img-desktop" src="https://picsum.photos/1800/600?grayscale"> </a>
+            <a href="#"><img class="img-mobile" src="https://picsum.photos/1040/600?grayscale"> </a>
+        </div>
+        <div class="slide-box">
+            <a href="#"><img class="img-desktop" src="https://picsum.photos/id/237/1800/600"> </a>
+            <a href="#"><img class="img-mobile" src="https://picsum.photos/id/237/1040/600"> </a>
+        </div>
+
+        <div class="nav-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+        </div>
+
+        <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+   </div> 
+</section>
+<!-- FIM Caroulsel-->
+        <p id="faixa"> <strong> Atenção ao prazo de confecção</strong></p>
+<!-- Disposição itens principais, a estrutura repete 4x-->
+<section>
+    <table aria-colspan="4">
+        <thead>
+            <th> <a href="#"><img class="img-table" src="https://picsum.photos/seed/picsum/200/200"> </a> </th>
+            <th> <a href="#"><img class="img-table" src="https://picsum.photos/seed/picsum/200/200"> </a> </th>
+            <th> <a href="#"><img class="img-table" src="https://picsum.photos/seed/picsum/200/200"> </a> </th>
+            <th> <a href="#"><img class="img-table" src="https://picsum.photos/seed/picsum/200/200"> </a> </th>
+        </thead>
+        <tr>
+            <td> Produto 1</td>
+            <td> Produto 2</td>
+            <td> Produto 3</td>
+            <td> Produto 4</td>
+        </tr>
+        <tr>
+            <td> Descrição 1</td>
+            <td> Descrição 2</td>
+            <td> Descrição 3</td>
+            <td> Descrição 4</td>
+        </tr>
+
+    </table>
+</section>
+
+</main>
+<script src="script.js" defer></script>
+</body>
+<footer>
+    <nav><ul>
+        <li><a href="#">Toalhas</a></li>
+        <li><a href="#">Mesa Posta</a></li>
+        <li><a href="#">Porta-guardanapos</a></li>
+        <li><a href="#">Jogo Americano</a></li>
+        <li><a href="#">Almofadas Personalizadas</a></li>
+        <li><a href="#">Linha prata</a></li>
+        <li><a href="P#">Linha KIDS</a></li>
+        <li><a href="#">Filtro dos Sonhos</a></li>
+        <li><a href="#">Árvore da Vida</a></li>
+        <li><a href="#">Bolsas de Crochê</a></li>
+        <li><a href="#">Linha Cuidados Terapêuticos</a></li>
+        <li><a href="#">Kits terapêuticos</a></li>
+    </nav></ul>
+
+    <div class="logo"> <a href="#"><img src="img/Logo.png" alt="Logo"></a> </div>
+    <p> Nome: Raul Antônio Horta Campos PDITA 307</p>
+</footer>
+</html>
