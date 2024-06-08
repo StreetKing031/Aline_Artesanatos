@@ -164,6 +164,41 @@ i:hover {
         right: 10vh;
         top: 10vh;
 }
+/* Footer */
+
+footer{text-align: center;
+color: #63b79f;}
+
+li#endereço{position: relative;
+  left: 670px;
+  bottom: -55px;}
+
+li#whatsapp{position: relative;
+left: 920px;
+bottom: -00px;}
+
+li#instagram{position: relative;
+left: 860px;
+bottom: 40px;}
+
+li#telefone{position: relative;
+left: 880px;
+bottom: -00px;}  
+
+a#logo{position: relative;
+top: -100px;}
+
+p{position: relative;
+top: -100px;}
+
+ul#produtos{position: relative;
+right: 850px;
+top: 100px;}
+
+ul#contato{position: relative;
+top: 30px;
+right: 20px;}
+
 /* RESPONSIVE DESIGN */
 
 @media (max-width: 1022px) {
