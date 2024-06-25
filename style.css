@@ -5,12 +5,19 @@
   font-family: Verdana, sans-serif;
 }
 
-html, body {
-  height: 300vh;
-  width: 100%;
+html {
+  margin-left: 2.5%;
+  align-items: center;
+  height: 2000px;
+}
+
+body {
+  height: 2126px;
+  width: 1800px;
   background-color: white;
   transition: 0.3s;
-}
+
+  }
 
 li {
   list-style: none;
@@ -38,8 +45,9 @@ a:hover {
   color: white;
   background-color: #f58f82;
 }
-/* HEADER */
+
 header {
+  height: 206px;
   position: relative;
   padding: 0 2rem;
   box-shadow: 0.5px 0.5px 10px 0.5px #000;
@@ -60,12 +68,12 @@ header {
   justify-content: space-between;
 }
 i {
-    font-size: 1.3rem;
+    font-size: 1rem;
     cursor: pointer;
     color: #63b79f;
-
 }
-i:hover {
+
+#nav2 .fa:hover {
   scale: 1.1;
   color: #f58f82;
 }
@@ -166,38 +174,46 @@ i:hover {
 }
 /* Footer */
 
-footer{text-align: center;
-color: #63b79f;}
+footer{
+  text-align: center;
+  color: #63b79f;}
 
-li#endereço{position: relative;
-  left: 670px;
-  bottom: -55px;}
+ul#contato {
+  text-align: end;
+}
 
-li#whatsapp{position: relative;
-left: 920px;
-bottom: -00px;}
+#nav1 {
+  width: 33%;
+}
 
-li#instagram{position: relative;
-left: 860px;
-bottom: 40px;}
+#nav2 {
+  width: 33%;
+  padding-left: 10%;
+  align-items: end;
+}
 
-li#telefone{position: relative;
-left: 880px;
-bottom: -00px;}  
+#nav2 .fa {
+  color: #63b79f;
+  margin-right: 30px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-110%);
+  font-size: 3.6rem;
+}
 
-a#logo{position: relative;
-top: -100px;}
+.footer_nav {
+  width: 100%;
+  display: flex;
+}
+.assinatura {
+  width: 33%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
-p{position: relative;
-top: -100px;}
-
-ul#produtos{position: relative;
-right: 850px;
-top: 100px;}
-
-ul#contato{position: relative;
-top: 30px;
-right: 20px;}
+ul#produtos{
+text-align: left;}
 
 /* RESPONSIVE DESIGN */
 
