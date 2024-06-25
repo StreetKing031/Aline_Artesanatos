@@ -35,47 +35,87 @@ main {
     padding: 20px;
 }
 
+
+/* Titulo Quem somos(h1) */
 h1 {
     text-align: center;
-    color: #4CAF50;
+    color: #63B79F;
+    margin: 0;
+    margin-bottom: 5%;
 }
 
+/* Inicio e Contato */
+.subtitle{
+    text-align: center;
+    margin-right: 50px;
+}
+.subtitle a{
+    text-decoration: none;
+    color: #333;
+    text-shadow:  1px 1px 2px #63B79F;
+}
+/* Texto principal */
 #quem-somos p {
     text-align: center;
+    text-indent: 2em;
     font-size: 18px;
-    margin: 20px 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+/* apresentação da equipe Ft lado esquerdo */
 .team {
-    display: flex;
-    justify-content: space-around;
-    margin: 40px 0;
+    display: inline-block;
+    width: 100%;
+    margin: auto;
 }
 
 .member {
     text-align: center;
-    background-color: #fff;
-    padding: 20px;
+    background-color: #63B79F;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 30%;
+    width: 80%;
+    height: 100px;
+    margin-bottom: 60px;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
 }
 
 .member img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 192px;
+    height: 192px;
     object-fit: cover;
-    margin-bottom: 15px;
+    align-self: flex-start;
+    margin-top: -46px;
+    margin-left: -10%;
 }
 
 .member h2 {
-    margin: 10px 0;
-    color: #333;
+    color: white;
+    background-color: black;
+    border-radius: 15%;
+    padding: 5px 10px 5px 10px;
+    margin-left: -35px;
 }
 
 .member p {
-    color: #666;
+    text-align: center;
+    margin:auto;
+}
+/*fim Ft lado esquerdo */
+/* Ft lado direito */
+#ftraul{
+    order: 3;
+    margin-right:-10%;
+}
+#Raul{
+    order: 2;
+    margin-right: 7%;
+    z-index: 1;
+    margin-left: 5px;
 }
 
 .image-section {
