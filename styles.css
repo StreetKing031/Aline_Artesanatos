@@ -11,12 +11,14 @@ html {
     height: 100%;
     width: fit-content;
     align-items: center;
+    max-width: 1800px;
 }
   
 body {
     transition: 0.3s;
     height: 100%;
     width: fit-content;
+
 }
   
 li {
@@ -26,7 +28,7 @@ li {
 /* header */
 
 header {
-    width: 1900px;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -128,74 +130,101 @@ i {
 }
 
 /* main */
-
+/* caroulsel e fundo */
+.container {
+    width: 100%;
+    height: fit-content; /* Alinhar com a altura do .hero */
+    position: relative;
+    padding: block 100px;;
+}
 .hero {
+    position: relative; /* Permitir posicionamento absoluto dos filhos */
     height: 640px;
     width: 100%;
-    background-image: url(/Design/Bolsa\ Kelly\ -\ banner\ \(576\ x\ 500\ px\).png);
+    background-image: url(/banner-grande/BannerBag.png);
     background-repeat: no-repeat;
-    overflow-x: hidden;
+    background-size: contain; /* Melhor cobertura da imagem */
+    background-position: center;
+    padding: 0;
+    z-index: 2;
     margin-top: 10px;
     margin-left: 0%;
-    background-size: 100%;
-    text-align: center;
-    padding: 50px 20px;
-    z-index: 1;
 }
 
 .solid-color {
     position: absolute;
-
+    top: 0;
+    left: 0;
     width: 100%;
-    flex-grow: 1; /* This will take the remaining width */
-    background-color: #c4c4c4; /* Replace with your desired solid color */
+    height: 100%;
+    /* cores do baanner da bag kelly*/
+    background: rgb(184,174,161);
+    background: linear-gradient(180deg, rgba(184,174,161,1) 17%, rgba(221,219,220,1) 74%);
+    /* cor filtro #678995 e cor #307F7A mandala */
+    z-index: 1;
 }
-
-.container {
-    display: flex;
-    width: 100%;
-    height: 642px;
-    z-index: 2;
-}
-
+/*fim carousel*/
+/* produtos expostos */
 .products {
     display: flex;
-    height: 450px;
+    height: 350px;
     gap: 20px;
-    padding: 0px;
+    padding: 0;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+/* Esconde a barra de rolagem para navegadores Webkit (Chrome, Safari) */
+.products::-webkit-scrollbar {
+    display: none; /* Oculta a barra de rolagem */
+}
+
+/* Esconde a barra de rolagem para IE, Edge e Firefox */
+.products {
+    -ms-overflow-style: none;  /* IE e Edge */
+    scrollbar-width: none;     /* Firefox */
 }
 
 .product {
-    margin-top: 30px;
-    text-align: center;
-    background-color: #c4c4c4;
-    border: 1px solid #ddd;
     border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+    margin-left: auto; margin-right: auto;
+    align-items: center;
 }
-
+.product>p {
+    margin-top: 5px;
+    text-align: center;
+}
 .product img {
-    width: 100%;
-    height: 50%;
+    width: 340px;
+    height: 206px;
     border-radius: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     max-height: 100%;
 }
-
-div.product {
-    height: 50%;
-    width: 90%;
-}
-
-#Descricao {
+.Descricao {
+    text-align: center;
     position: relative;
-    bottom: -30px;
+    bottom: -10px;
+}
+/* Media query para telas de 0 a 767 pixels de largura */
+@media (max-width: 767px) {
+    .products {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    .product {
+        flex: 0 0 33.33%; /* Exibe dois produtos por vez */
+        background-color: rgba(255, 255, 255, 0);
+        align-self: center;        
+    }
 }
 
-.product p {
-    margin-top: 5px;
-}
 
 /* Container do carrossel */
 /*ATENÇÃO! Este modelo não inclui o formato de caixa com scroll
@@ -335,103 +364,30 @@ footer .social-media a img {
     background-color: #263238;
     color: #63b79f;
 }
+/* Desktop grande */
 @media (min-width: 1024px) {
     .hero {
-        height: 640px;
-        background-image: url(/img/Bolsa\ Kelly\ -\ banner.png);
+        background-image: url(/banner-grande/BannerBag.png);
         background-repeat: no-repeat;
         overflow-x: hidden;
         margin-top: 10px;
         margin-left: 0%;
-        background-size: 100%;
-    }
-
-    .product {
-        margin-top: 30px;
-        text-align: center;
-        background-color: #c4c4c4;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-    }
-
-    .product img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        max-height: 100%;
     }
 }
 
-@media (min-width: 768px) {
+/* Tablet e Desktop médio */
+@media (min-width: 768px) and (max-width: 1500px) {
     .hero {
-        height: 640px;
-        background-image: url(/img/Bolsa\ Kelly\ -\ banner.png);
+        background-image: url(/banner-medio/BannerBag.png);
         background-repeat: no-repeat;
         overflow-x: hidden;
         margin-top: 10px;
         margin-left: 0%;
-        background-size: 100%;
     }
 
-    .product {
-        margin-top: 30px;
-        text-align: center;
-        background-color: #c4c4c4;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-    }
-
-    .product img {
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        max-height: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
+/* Smartphones */
+@media (max-width: 767px) {
     .hero {
-        height: 640px;
-        width: 100%;
-        background-image: url(/banner-menor/BannerBag.png);
-        background-repeat: no-repeat;
-        overflow-x: hidden;
-        margin-top: 10px;
-        margin-left: 0%;
-        background-size: 100%;
-    }
-}
-
-/* smartphones */
-
-@media (min-width: 576px) {
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .hero  {
-        height: 640px;
-        background-image: url(/banner-menor/BannerBag.png);
-        background-repeat: no-repeat;
-        overflow-x: hidden;
-        margin-top: 10px;
-        background-size: 100%;
-    }
-
-}
-
-@media (max-width: 576px) {
-    .hero {
-        height: 640px;
-        background-image: url(/banner-menor-500px-20240626T191308Z-001/banner-menor-500px/BannerBag.png); 
-        background-position: center;
+        background-image: url(/banner-pequeno/BannerBag.png);
     }
 }
