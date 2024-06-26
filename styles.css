@@ -86,13 +86,10 @@ header nav ul li a {
 }
 
 .product {
-    
     margin-top: 30px;
     text-align: center;
     color: #000000;
     background-color: #c4c4c4;
-    padding: 10px;
-    padding-right: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
 }
@@ -131,7 +128,6 @@ Para voltar o formato de box, remova os comentários a esquerda */
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-    border: 1px solid #ccc;
     background-color: #fff;
 }
 
@@ -235,8 +231,6 @@ footer .social-media a img {
         text-align: center;
         color: #000000;
         background-color: #c4c4c4;
-        padding: 20px;
-        padding-right: 20px;
         border: 1px solid #ddd;
         border-radius: 10px;
     }
@@ -267,8 +261,6 @@ footer .social-media a img {
         text-align: center;
         color: #000000;
         background-color: #c4c4c4;
-        padding: 20px;
-        padding-right: 20px;
         border: 1px solid #ddd;
         border-radius: 10px;
     }
@@ -304,8 +296,6 @@ footer .social-media a img {
         text-align: center;
         color: #000000;
         background-color: #c4c4c4;
-        padding: 20px;
-        padding-right: 20px;
         border: 1px solid #ddd;
         border-radius: 10px;
     }

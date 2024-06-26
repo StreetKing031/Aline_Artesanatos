@@ -36,13 +36,11 @@ header {
   width: 85%;
   height: 25vh;
   max-width: 1200px;
-
   font-size: 1rem;
   font-variant: small-caps;
   font-weight: bold;
   margin: 0 auto;
   text-align: center;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,10 +61,21 @@ i {
   height: 20vh;
 }
 
-.navbar .links {
+.navbar  {
   display: flex;
   gap: 2rem;
 }
+.links {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  text-align: center;
+}
+
+.links a {
+  margin-left: 30px;
+}
+
 .links img {
   height: 5vh;
   width: 5vh;
