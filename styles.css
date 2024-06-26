@@ -1,28 +1,49 @@
-body {
-    font-family: Arial, sans-serif;
+/* html */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+  
+html {
+    height: 100%;
+    width: fit-content;
+    align-items: center;
+}
+  
+body {
+    background-color: white;
+    transition: 0.3s;
+    height: 100%;
+    width: fit-content;
+}
+  
+li {
+    list-style: none;
 }
 
+/* header */
+
 header {
-    max-width: 1800px;
+    width: 1900px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    padding: -10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 a {
     text-decoration: none;
     color: #63b79f;
     font-size: 1rem;
-  }
+}
   
-  a:hover {
+a:hover {
     color: #f58f82;
-  }
+}
 
 header .logo img {
     width: 150px;
@@ -55,10 +76,64 @@ header nav ul li a {
     color: #333;
     font-weight: bold;
 }
+/* navbar*/
+
+.navbar {
+    width: 85%;
+    height: 25vh;
+    max-width: 1200px;
+    font-size: 1rem;
+    font-variant: small-caps;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+i {
+      font-size: 1rem;
+      cursor: pointer;
+      color: #63b79f;
+}
+  
+#nav2 .fa:hover {
+    scale: 1.1;
+    color: #f58f82;
+}
+  
+.logo a img {
+    width: 20vh;
+    height: 20vh;
+}
+  
+.navbar  {
+    display: flex;
+    gap: 2rem;
+}
+  
+.links {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    text-align: center;
+}
+  
+.links a {
+    margin-left: 30px;
+}
+  
+.links img {
+    height: 5vh;
+    width: 5vh;
+}
+
+/* main */
 
 .hero {
     height: 640px;
-    width: 40%;
+    width: 100%;
     background-image: url(/Design/Bolsa\ Kelly\ -\ banner\ \(576\ x\ 500\ px\).png);
     background-repeat: no-repeat;
     overflow-x: hidden;
@@ -67,14 +142,23 @@ header nav ul li a {
     background-size: 100%;
     text-align: center;
     padding: 50px 20px;
-    background-color: #f7f7f7;
+    z-index: 1;
 }
 
-.hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+.solid-color {
+    position: absolute;
+
+    width: 100%;
+    flex-grow: 1; /* This will take the remaining width */
+    background-color: #c4c4c4; /* Replace with your desired solid color */
 }
 
+.container {
+    display: flex;
+    width: 100%;
+    height: 640px;
+    z-index: 2;
+}
 
 .products {
     display: flex;
@@ -116,9 +200,11 @@ div.product {
     color: #000000;
     margin-top: 5px;
 }
+
 /* Container do carrossel */
 /*ATENÇÃO! Este modelo não inclui o formato de caixa com scroll
 Para voltar o formato de box, remova os comentários a esquerda */
+
 #avaliacoes{
     margin-top: 100px;
     width: 100%;
@@ -132,6 +218,7 @@ Para voltar o formato de box, remova os comentários a esquerda */
 }
 
 /* Container interno do carrossel */
+
 .carousel-inner {
     display: flex;
     /*scroll-snap-type: x mandatory; /* Habilita o scroll-snap */
@@ -148,6 +235,7 @@ Para voltar o formato de box, remova os comentários a esquerda */
 }
 
 /* Estilo individual das avaliações */
+
 .review {
     display: block;
     /*scroll-snap-align: start; /* Alinha o início de cada item com o início do container */
@@ -158,21 +246,24 @@ Para voltar o formato de box, remova os comentários a esquerda */
     border-radius: 5px;
     background-color: #f9f9f9;
     text-align: center;
-    
 }
+
 .imgnomedata{
     display: flex;
 }
+
 .user{
     margin-left: 10px;
     margin-top: 5px;
 }
+
 .user>p{
     margin: 0;
     text-align: left;
 }
 
 /* Estilo para a imagem do usuário */
+
 .review img {
     border-radius: 50%;
     width: 50px;
@@ -180,6 +271,7 @@ Para voltar o formato de box, remova os comentários a esquerda */
 }
 
 /* Estilo para as estrelas */
+
 .review .stars {
     color: #ffd700; /* Cor das estrelas preenchidas */
     font-size: 50px;
@@ -187,13 +279,51 @@ Para voltar o formato de box, remova os comentários a esquerda */
 
 /*fim avaliações */
 
-footer {
+footer{
+    color: #63b79f;
     display: block;
     text-align: center;
     padding: 20px;
     background-color: #ffffff;
     border-top: 1px solid #dadada;
 }
+  
+ul#contato {
+    text-align: end;
+}
+  
+#nav1 {
+    width: 33%;
+}
+  
+#nav2 {
+    width: 33%;
+    padding-left: 10%;
+    align-items: end;
+}
+  
+#nav2 .fa {
+    color: #63b79f;
+    margin-right: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-110%);
+    font-size: 3.6rem;
+}
+  
+.footer_nav {
+    width: 100%;
+    display: flex;
+}
+.assinatura {
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+  
+ul#produtos{
+  text-align: left;}
 
 .social-media {
     align-items: center;
@@ -206,13 +336,49 @@ footer .social-media a img {
 
 .carousel {
     display: flex;
-    overflow-x: scroll;
+}
+
+/* darkmode */
+.fa-moon,.fa-sun{
+    position: absolute;
+    right: 10vh;
+    top: 10vh;
+}
+
+/* light/ DARK MODE */
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.dark,
+.dark header{
+    background-color: #263238;
+    color: white;
+}
+
+/* <i> junto com header */
+
+.fa-moon {
+    display: none;
+}
+
+.dark .fa-sun {
+    display: none;
+}
+
+.dark .fa-moon {
+    display: block;
+    color: white;
+}
+
+.dark .fa-moon:hover{
+    color:#f58f82
 }
 
 @media (min-width: 1024px) {
     .hero {
         height: 640px;
-        width: 100%;
         background-image: url(/img/Bolsa\ Kelly\ -\ banner.png);
         background-repeat: no-repeat;
         overflow-x: hidden;
@@ -226,7 +392,6 @@ footer .social-media a img {
     }
 
     .product {
-    
         margin-top: 30px;
         text-align: center;
         color: #000000;
@@ -234,6 +399,7 @@ footer .social-media a img {
         border: 1px solid #ddd;
         border-radius: 10px;
     }
+
     .product img {
         width: 100%;
         height: auto;
@@ -241,13 +407,11 @@ footer .social-media a img {
         margin-bottom: 10px;
         max-height: 100%;
     }
-
 }
 
 @media (min-width: 768px) {
     .hero {
         height: 640px;
-        width: 100%;
         background-image: url(/img/Bolsa\ Kelly\ -\ banner.png);
         background-repeat: no-repeat;
         overflow-x: hidden;
@@ -282,12 +446,12 @@ footer .social-media a img {
 
     .hero {
         height: 640px;
-        width: 40%;
-        background-image: url(/Design/Bolsa\ Kelly\ -\ banner\ \(576\ x\ 500\ px\).png);
+        width: 100%;
+        background-image: url(/banner-menor/BannerBag.png);
         background-repeat: no-repeat;
         overflow-x: hidden;
         margin-top: 10px;
-        margin-left: 10%;
+        margin-left: 0%;
         background-size: 100%;
     }
 
@@ -308,7 +472,10 @@ footer .social-media a img {
     }
 }
 
-@media (max-width: 576px) {
+/* smartphones */
+
+@media (min-width: 576px) {
+
     header nav ul {
         flex-direction: column;
         gap: 10px;
@@ -316,23 +483,37 @@ footer .social-media a img {
 
     .hero  {
         height: 640px;
-        width: 40%;
-        background-image: url(/Design/Bolsa\ Kelly\ -\ banner\ \(576\ x\ 500\ px\).png);
+        background-image: url(/banner-menor/BannerBag.png);
         background-repeat: no-repeat;
         overflow-x: hidden;
         margin-top: 10px;
-        margin-left: 10%;
         background-size: 100%;
     }
 
-    .product {
-        height: 450px;
-        padding: 20px;
+    .products {
+        display: flex;
     }
+
+    .product {
+        height: 550px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
     .product img {
         width: 100%;
         height: 100%;
         border-radius: 10px;
         max-height: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .hero {
+        width: 576px;
+        background-image: url('/img/Bolsa\ Kelly\ -\ banner\ \(576\ x\ 500\ px\).png'); /* Replace with your image path */
+        background-size: cover;
+        background-position: center;
     }
 }
