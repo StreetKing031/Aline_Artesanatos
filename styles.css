@@ -14,6 +14,15 @@ header {
     padding: -10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+a {
+    text-decoration: none;
+    color: #63b79f;
+    font-size: 1rem;
+  }
+  
+  a:hover {
+    color: #f58f82;
+  }
 
 header .logo img {
     width: 150px;
@@ -103,6 +112,77 @@ div.product {
     color: #000000;
     margin-top: 5px;
 }
+/* Container do carrossel */
+/*ATENÇÃO! Este modelo não inclui o formato de caixa com scroll
+Para voltar o formato de box, remova os comentários a esquerda */
+#avaliacoes{
+    margin-top: 100px;
+    width: 100%;
+}
+.carousel-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+/* Container interno do carrossel */
+.carousel-inner {
+    display: flex;
+    /*scroll-snap-type: x mandatory; /* Habilita o scroll-snap */
+    /*overflow-x: scroll;
+    scroll-behavior: smooth; /* Suaviza a rolagem */
+    -webkit-overflow-scrolling: touch; /* Suporte para iOS */
+}
+#avaliacoes{
+    display: flex;
+    /*max-width: 372px;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+
+/* Estilo individual das avaliações */
+.review {
+    display: block;
+    /*scroll-snap-align: start; /* Alinha o início de cada item com o início do container */
+    /*flex: 0 0 100%;  Cada item ocupa 100% da largura do container 
+    box-sizing: border-box;*/
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+    
+}
+.imgnomedata{
+    display: flex;
+}
+.user{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.user>p{
+    margin: 0;
+    text-align: left;
+}
+
+/* Estilo para a imagem do usuário */
+.review img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilo para as estrelas */
+.review .stars {
+    color: #ffd700; /* Cor das estrelas preenchidas */
+    font-size: 50px;
+}
+
+/*fim avaliações */
 
 footer {
     display: block;
@@ -200,9 +280,6 @@ footer .social-media a img {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 
-    .testimonial {
-        padding: 0 20px;
-    }
     .product img {
         width: 100%;
         height: auto;
