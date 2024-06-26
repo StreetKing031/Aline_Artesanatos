@@ -48,6 +48,14 @@ header nav ul li a {
 }
 
 .hero {
+    height: 640px;
+    width: 40%;
+    background-image: url(/Design/Bolsa\ Kelly\ -\ banner\ \(576\ x\ 500\ px\).png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    margin-top: 10px;
+    margin-left: 0%;
+    background-size: 100%;
     text-align: center;
     padding: 50px 20px;
     background-color: #f7f7f7;
@@ -58,15 +66,14 @@ header nav ul li a {
     margin-bottom: 20px;
 }
 
+
 .products {
+    display: flex;
     height: 450px;
-    flex-wrap: nowrap;
-    display: grid;
-    grid-template-columns: repeat(alto auto-fill, (200px, 1fr));
     gap: 20px;
     padding: 0px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .product {
@@ -75,7 +82,7 @@ header nav ul li a {
     text-align: center;
     color: #000000;
     background-color: #c4c4c4;
-    padding: 20px;
+    padding: 10px;
     padding-right: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -83,9 +90,9 @@ header nav ul li a {
 
 .product img {
     width: 100%;
-    height: auto;
+    height: 50%;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     max-height: 100%;
 }
 
@@ -122,22 +129,26 @@ footer .social-media a img {
 }
 
 .carousel {
+    display: flex;
     overflow-x: scroll;
 }
 
 @media (min-width: 1024px) {
+    .hero {
+        height: 640px;
+        width: 100%;
+        background-image: url(/img/Bolsa\ Kelly\ -\ banner.png);
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+        margin-top: 10px;
+        margin-left: 0%;
+        background-size: 100%;
+    }
+
     .hero h1 {
         font-size: 3em;
     }
 
-    .products {
-        height: 450px;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 20px;
-        padding: 0px;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
     .product {
     
         margin-top: 30px;
@@ -160,13 +171,18 @@ footer .social-media a img {
 }
 
 @media (min-width: 768px) {
-    .products {
-        height: 450px;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        overflow-x: scroll
+    .hero {
+        height: 640px;
+        width: 100%;
+        background-image: url(/img/Bolsa\ Kelly\ -\ banner.png);
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+        margin-top: 10px;
+        margin-left: 0%;
+        background-size: 100%;
     }
+
     .product {
-    
         margin-top: 30px;
         text-align: center;
         color: #000000;
@@ -176,9 +192,10 @@ footer .social-media a img {
         border: 1px solid #ddd;
         border-radius: 10px;
     }
+
     .product img {
         width: 100%;
-        height: auto;
+        height: 100%;
         border-radius: 10px;
         margin-bottom: 10px;
         max-height: 100%;
@@ -192,22 +209,31 @@ footer .social-media a img {
     }
 
     .hero {
-        padding: 30px 20px;
+        height: 640px;
+        width: 40%;
+        background-image: url(/Design/Bolsa\ Kelly\ -\ banner\ \(576\ x\ 500\ px\).png);
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+        margin-top: 10px;
+        margin-left: 10%;
+        background-size: 100%;
     }
 
-    .products {
-        height: 450px;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    .product {
+        margin-top: 30px;
+        text-align: center;
+        color: #000000;
+        background-color: #c4c4c4;
+        padding: 20px;
+        padding-right: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
     }
 
-    .testimonial {
-        padding: 0 20px;
-    }
     .product img {
         width: 100%;
-        height: auto;
+        height: 100%;
         border-radius: 10px;
-        margin-bottom: 10px;
         max-height: 100%;
     }
 }
@@ -220,7 +246,7 @@ footer .social-media a img {
 
     .hero  {
         height: 640px;
-        width: 50%;
+        width: 40%;
         background-image: url(/Design/Bolsa\ Kelly\ -\ banner\ \(576\ x\ 500\ px\).png);
         background-repeat: no-repeat;
         overflow-x: hidden;
@@ -231,13 +257,12 @@ footer .social-media a img {
 
     .product {
         height: 450px;
-        padding: 10px;
+        padding: 20px;
     }
     .product img {
         width: 100%;
-        height: auto;
+        height: 100%;
         border-radius: 10px;
-        margin-bottom: 10px;
         max-height: 100%;
     }
 }

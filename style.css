@@ -7,16 +7,16 @@
 
 html {
   margin-left: 2.5%;
+  height: 2126px;
+  width: 1800px;
   align-items: center;
-  height: 2000px;
 }
 
 body {
-  height: 2126px;
-  width: 1800px;
   background-color: white;
   transition: 0.3s;
-
+  height: 2126px;
+  width: 1800px;
   }
 
 li {
@@ -31,19 +31,6 @@ a {
 
 a:hover {
   color: #f58f82;
-}
-#faixa {
-  position: relative;
-  bottom: 610px;
-  width: 100%;
-  height: fit-content;
-  max-height: 2rem;
-  font-size: 0.85rem;
-  text-align: center;
-  align-items: center;
-  margin: 1px;
-  color: white;
-  background-color: #f58f82;
 }
 
 header {
@@ -62,11 +49,13 @@ header {
   font-variant: small-caps;
   font-weight: bold;
   margin: 0 auto;
+  text-align: center;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 i {
     font-size: 1rem;
     cursor: pointer;
@@ -172,6 +161,7 @@ i {
         right: 10vh;
         top: 10vh;
 }
+
 /* Footer */
 
 footer{
