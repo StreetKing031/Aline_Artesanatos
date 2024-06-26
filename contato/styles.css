@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+main {
+    padding: 40px;
+}
+/* Título contato */
+.contact h1 {
+    font-size: 2em;
+    color: #007BFF;
+    text-align: left;
+}
+.title{
+    width: 253px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+.title>h1{
+    margin: 0;
+}
+
+
+.contact-info h3, .social-media h3, .visit h3 {
+    color: #007BFF;
+}
+
+.contact-info p, .social-media p, .visit p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+}
+
+footer nav ul li {
+    display: inline;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-logo img {
+    max-width: 100px;
+    margin-top: 20px;
+}
