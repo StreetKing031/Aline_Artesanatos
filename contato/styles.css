@@ -63,33 +63,97 @@ main {
     text-align: left;
 }
 .title{
-    width: 253px;
+    width: fit-content;
     margin-left: auto;
     margin-right: auto;    
+    margin-bottom: 70px;
 }
 .title>h1{
     margin: 0;
+    color: #63B79F;
 }
-
-
-.contact-info h3, .social-media h3, .visit h3 {
-    color: #007BFF;
-}
-
-.contact-info p, .social-media p, .visit p {
+.title>a{
     color: #666;
-    line-height: 1.6;
+    text-decoration: none;
+    font-size: 10px;
+    transition: 0.2s;
+}
+.title>a:hover{
+    font-size: 15px;
+    padding: 1px;
+    color:#63B79F;
+    transition: 0.2s;
+}
+/*fim title*/
+/*subtitle*/
+h3{
+    color: #63B79F;
+    text-align: center;
+    margin-top: 40px;
+}
+/*texto*/
+.social-media,.visitantes,.textcontact{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.contact-info p{
+    color: black;
+}
+.text1{
+    color: #666;
+    line-height: 1.4em;
+    text-indent: 2em;
+    text-indent: 1.5em;
+    text-align: center;
+}
+.social-media>p{
+    text-indent: 0;
+}
+.visitantes p:nth-child(3){
+    text-align: center;
+    font-style: italic;
+    color: #333;
+    margin-top: 40px;
+}
+/* ícones wpp instagram*/
 .icons {
+    margin-top: 40px;
+    height: 72px;
     display: flex;
     justify-content: center;
     gap: 20px;
+    align-items: safe;
 }
 
-.icons img {
-    width: 40px;
-    height: 40px;
+.icons a {
+    font-size: 50px;
+    color: #63B79F;
+    padding: 2px;
+    transition: 0.3s;
+}
+
+.icons a:hover {  
+    font-size: 70px;
+    transition: 0.3s;
+}
+
+.icons a:first-child {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    border-radius: 20%;
+    color: transparent;
+    margin-right: 22px;
+}
+
+.icons a:nth-child(2) {
+    color: #25D366;
+}
+/*fim icones*/
+/*ESPAÇO EM BRANCO */
+.visitantes{
+    margin-bottom: 300px;
 }
 
 footer {
