@@ -73,8 +73,17 @@ main {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 100%;
+    width: fit-content;
     margin-bottom: 40px;
+}
+/*responsividade descrição*/
+@media (max-width: 1122px) {
+    .product{
+        flex-direction: column;
+    }
+    #tudoproduto,.title{
+        max-width:780px;
+    }
 }
 
 /* local onde a imagem é renderizada */
@@ -151,7 +160,7 @@ h1 {
 /*botão whatsapp*/
 .wpp{
     margin-top: 4em;
-
+    cursor: pointer;
     display: flex;
     align-items: center;
     background-color: white;
@@ -160,10 +169,16 @@ h1 {
     height: 70px;
     margin-left: auto;
     margin-right: auto;
+    transition: 0.2s;
+}
+.wpp:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
 }
 .wpp>h2{
     color: #2AA81A;
     cursor: pointer;
+    padding: 5px;
 }
 .wpp>img{
     width:77px;
@@ -271,3 +286,4 @@ footer {
     height: 60px;
     margin-top: 20px;
 }
+
