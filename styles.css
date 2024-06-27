@@ -11,7 +11,6 @@ html {
     height: 100%;
     width: fit-content;
     align-items: center;
-    max-width: 1800px;
 }
   
 body {
@@ -101,7 +100,12 @@ header > nav > div.navbar > li > form > button{
     font-size: 20px;
     color: #63b79f;
     padding: 5px;
-    cursor: pointer; /* Adicione um cursor de ponteiro para indicar que é clicável */
+    cursor: pointer; /* Adicione um cursor de ponteiro para indicar que é clicável */]
+    transition: ;
+}
+#darkmode > label > i:hover{
+    font-size: 25px;
+    transition: 0.3s;
 }
 
 #chk {
