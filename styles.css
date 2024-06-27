@@ -322,58 +322,38 @@ Para voltar o formato de box, remova os comentários a esquerda */
 
 /*fim avaliações */
 
+/* RODAPÉ */
 footer{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
     color: #63b79f;
-    display: block;
     text-align: center;
     padding: 20px;
     border-top: 1px solid #dadada;
+
+    margin-right: 5%; margin-left: 5%;
 }
-  
-ul#contato {
-    text-align: end;
+#nav1,#nav2,#nav3 {
+    width: fit-content; /*largura dos grupos internos */
+    align-items: center;
+    justify-content: center;
 }
-  
-#nav1 {
-    width: 33%;
-}
-  
-#nav2 {
-    width: 33%;
-    padding-left: 10%;
-    align-items: end;
-}
-  
-#nav2 .fa {
-    color: #63b79f;
-    margin-right: 30px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-110%);
-    font-size: 3.6rem;
-}
-#nav2 .fa:hover {
-    scale: 1.1;
-    color: #f58f82;
-}
-  
-.footer_nav {
-    width: 100%;
-    display: flex;
-}
+
+
 .assinatura {
-    width: 33%;
-    margin-left: auto;
-    margin-right: auto;
+    height: fit-content;
+    cursor: default;
+    flex-grow: 1;
     text-align: center;
+    align-self: center;
 }
   
 ul#produtos{
-  text-align: left;}
-
-.social-media {
-    align-items: center;
+  text-align: left;
+  width: fit-content;
 }
+
 
 footer .social-media a img {
     width: 30px;
@@ -383,7 +363,29 @@ footer .social-media a img {
 .carousel {
     display: flex;
 }
+/* NAV2 = Link instagram,wpp e Logo */
+.social-media{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+#nav2{
+    align-items:center;
+    height: 100%;
+    display: flex;
 
+}
+#nav2 .fa {
+    color: #63b79f;
+    font-size: 3.6rem;
+    padding: 15px;
+}
+#nav2 .fa:hover {
+    font-size: 3.8rem;
+    color: #f58f82;
+}
+  
 
 /* Desktop grande */
 @media (min-width: 1024px) {
