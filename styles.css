@@ -100,8 +100,8 @@ header > nav > div.navbar > li > form > button{
     font-size: 20px;
     color: #63b79f;
     padding: 5px;
-    cursor: pointer; /* Adicione um cursor de ponteiro para indicar que é clicável */]
-    transition: ;
+    cursor: pointer; /* Adicione um cursor de ponteiro para indicar que é clicável */
+    transition: 0.3s;
 }
 #darkmode > label > i:hover{
     font-size: 25px;
