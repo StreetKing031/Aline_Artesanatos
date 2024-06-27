@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aline Artesanatos - Bolsa Kelly</title>
+    <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial scale=1.0" />
+        <link   rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+                integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" sizes="192x192" href="/logo artesanato - versão final.png artesanato - versão final.png">
+        <link rel="manifest" href="/logo artesanato - versão final.png artesanato - versão final.png">
+    <title>Aline Artesanatos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="/Design/logo 160px - Artesanato.png" alt="Aline Gumes Artesanatos">
-        </div>
+        <div class="logo"> <a href="/home.html"><img src="/logo 160px - Artesanato.png" alt="Logo"></a> </div>
+            <ul class="links"> 
+                <li><A href="/contato/index.html">CONTATO</A></li>
+                <li><a href="/quemsomos/indexQS.html">QUEM SOMOS</a></li>
+            </ul>
         <nav>
-            <a href="#">CONTATO</a>
-            <a href="#">QUEM SOMOS</a>
-            <a href="#">inst</a>
-            <a href="#">wpp</a>
-            <div class="search-bar">
-                <input type="text" placeholder="Search">
-                <button type="submit">🔍</button>
+            <div class="navbar">
+                <li class="box-busca">
+                        <form method="post" action="#">
+                                <input type="text" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa">
+                                <button class="search-box-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+
+                        </form>
+                    </li>
             </div>
-            <button class="darkmode">darkmode</button>
         </nav>
+        <div id="darkmode">
+            <input type="checkbox" class="checkbox" id="chk"/>
+            <label class="label" for="chk">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+            </label>   
+        </div> 
     </header>
     <main>
         <section class="product">
@@ -39,7 +53,7 @@
                         <a href="/home.html">Início</a>
                         <a href="/contato/index.html">Contato</a>
                     </div>
-                <h1>Bag Kelly</h1>
+                <h1>Mandala</h1>
                     <p class="price">R$ 143,00</p>
                 </div>
                 <h2>Descrição</h2>
@@ -106,20 +120,36 @@
          <!-- Container principal do carrossel -->
         
     </main>
+    <div id="borda"></div> 
     <footer>
-        <nav class="footer-nav">
-            <a href="#">Início</a>
-            <a href="#">Produtos</a>
-            <a href="#">Quem somos</a>
-            <a href="#">Contato</a>
-        </nav>
-        <div class="social-media">
-            <a href="#"><img src="instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="facebook.png" alt="Facebook"></a>
-        </div>
-        <div class="footer-logo">
-            <img src="footer-logo.png" alt="Aline Gumes Artesanatos">
-        </div>
+            <nav id="nav1">
+                <ul id="produtos">
+                  <li><a href="/home.html">Inicio</a></li>
+                  <li><a href="/contato/index.html">Contato</a></li>
+                  <li><a href="/quemsomos/indexQS.html">Quem somos</a></li>
+                  <li>
+                    <ul>
+                        <li>Mandala</li>
+                        <li>Árvore da Vida</li>
+                        <li>Filtro dos Sonhos</li>
+                        <li>Bag Kelly</li>
+                    </ul>
+                  </li>
+                </ul>
+            </nav>
+            <div class="assinatura">
+                <p> Raul Antônio Horta Campos PDITA 307 <br> Hiago Espíndola Ambrósio PDITA 481</p>
+                <p>&copy; 2024 Aline Artesanatos</p> 
+            </div>
+            <nav id="nav2">
+                <div id="socialmedia">
+                   <a href="https://api.whatsapp.com/message/XX3A6ALZRBBBI1?autoload=1&app_absent=0"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                   <a href="https://www.instagram.com/alinegomesartesanatos/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+                <a id="logo"><img src="/logo 160px - Artesanato.png" alt="Logo"></a> 
+            </nav>
+        <script src="/script.js"></script>
+        <script src="https://kit.fontawesome.com/d316ebf6c0.js" crossorigin="anonymous"></script>
     </footer>
 </body>
 </html>

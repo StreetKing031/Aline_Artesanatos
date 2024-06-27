@@ -1,57 +1,190 @@
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
+  /* header */
+  
+  header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #f5f5f5;
-}
-
-.logo img {
-    max-width: 150px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  a {
     text-decoration: none;
-    color: #333;
-}
-
-.search {
+    color: #63b79f;
+    font-size: 1rem;
+  }
+  
+  a:hover {
+    color: #f58f82;
+  }
+  
+  header .logo img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 20px
+  }
+  
+  
+  
+  /* flex nos agrupamentos - barra de pesquisa --> */
+  div.navbar > li > form, .box-busca,header>nav{
     display: flex;
+  }
+  
+  header>nav{
+    margin-right: 5%;/*afasta do canto*/
+  }
+  
+  /* div que agrupa os elementos, está repetitivo - corrigir se houver tempo */
+  .navbar {
+    width: 85%;
+    margin: auto;
     align-items: center;
-    gap: 10px;
-}
-
-.search input {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-.search button {
-    padding: 5px 10px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
+    justify-content: space-between;
+  }
+  /* barra pesquisa */
+  body > header > nav > div.navbar > li > form > input{
+    border-radius: 10%;
+    border-color:#63b79f;
+    height: 2rem;
+    font-size: 1rem;
+    text-align: left;
+  
+  
+  }
+  /*icone pesquisa */
+  header > nav > div.navbar > li > form > button{
+    font-size: 20px;
+    padding-left: 5px; padding-right: 5px;
+    margin-left: -40px;
+  
     cursor: pointer;
+    color: #63b79f;
+    border:none;
+    background:none;
+    right: 0;
+  }
+  /*darkmode */
+  #darkmode{
+    margin-right: 5%;
+  }
+  #darkmode > label > i {
+    /*botão*/
+    font-size: 20px;
+    color: #63b79f;
+    padding: 5px;
+    cursor: pointer; /* Adicione um cursor de ponteiro para indicar que é clicável */
+    transition: 0.3s;
+  }
+  #darkmode > label > i:hover{
+    font-size: 25px;
+    transition: 0.3s;
+  }
+  
+  #chk {
+    /* Ocultar o checkbox */
+    display: none;
+  }
+  
+  .dark {
+    /*efeito escurecedor */
+    background-color: #263238;
+    color: #63b79f;
+  }
+  
+  
+  #borda {
+    margin-left: 5%;
+    width: 90%;
+    height: 5px;
+    background-color: #f58f82;
+  }
+  
+  
+  #logo > img{
+    width: 20vh;
+    height: 20vh;
+  }
+  
+  .links {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    text-align: center;
+  }
+  
+  .links a {
+    margin-left: 30px;
+  }
+  
+  .links img {
+    height: 5vh;
+    width: 5vh;
+  }
+  
+  /* RODAPÉ */
+footer{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    color: #63b79f;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #dadada;
+
+    margin-right: 5%; margin-left: 5%;
+}
+#nav1,#nav2,#nav3 {
+    width: fit-content; /*largura dos grupos internos */
+    align-items: center;
+    justify-content: center;
+}
+
+
+.assinatura {
+    height: fit-content;
+    cursor: default;
+    flex-grow: 1;
+    text-align: center;
+    align-self: center;
+}
+  
+ul#produtos{
+  text-align: left;
+  width: fit-content;
+}
+
+
+footer .social-media a img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.carousel {
+    display: flex;
+}
+/* NAV2 = Link instagram,wpp e Logo */
+.social-media{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+#nav2{
+    align-items:center;
+    height: 100%;
+    display: flex;
+
+}
+#nav2 .fa {
+    color: #63b79f;
+    font-size: 3.6rem;
+    padding: 15px;
+}
+#nav2 .fa:hover {
+    font-size: 3.8rem;
+    color: #f58f82;
 }
 
 main {
