@@ -149,6 +149,9 @@ header > nav > div.navbar > li > form > button{
   width: 5vh;
 }
 
+li {
+  list-style: none;
+}
 
 footer{
   color: #63b79f;

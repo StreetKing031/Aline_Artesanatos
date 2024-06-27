@@ -1,41 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    width: 100%;
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    padding: 10px 50px;
-    border-bottom: 1px solid #ddd;
-}
-
-.logo img {
-    height: 80px;
-}
-
-nav a {
-    color: #333;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-main {
-    max-width: 1800px;
-    margin: 20px auto;
-    padding: 20px;
-}
 
 
 /* Titulo Quem somos(h1) */
@@ -129,29 +91,65 @@ h1 {
     border-radius: 10px;
 }
 
-footer {
-    background-color: #fff;
-    padding: 20px;
+footer{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    color: #63b79f;
     text-align: center;
-    border-top: 1px solid #ddd;
+    padding: 20px;
+    border-top: 1px solid #dadada;
+
+    margin-right: 5%; margin-left: 5%;
+}
+#nav1,#nav2,#nav3 {
+    width: fit-content; /*largura dos grupos internos */
+    align-items: center;
+    justify-content: center;
 }
 
-.footer-nav a {
-    margin: 0 10px;
-    color: #333;
-    text-decoration: none;
-    font-size: 16px;
+
+.assinatura {
+    height: fit-content;
+    cursor: default;
+    flex-grow: 1;
+    text-align: center;
+    align-self: center;
+}
+  
+ul#produtos{
+  text-align: left;
+  width: fit-content;
 }
 
-.footer-nav a:hover {
-    text-decoration: underline;
-}
 
-.social-media a {
-    margin: 0 10px;
-}
-
-.social-media img {
+footer .social-media a img {
     width: 30px;
-    height: 30px;
+    margin: 0 10px;
+}
+
+.carousel {
+    display: flex;
+}
+/* NAV2 = Link instagram,wpp e Logo */
+.social-media{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+#nav2{
+    align-items:center;
+    height: 100%;
+    display: flex;
+
+}
+#nav2 .fa {
+    color: #63b79f;
+    font-size: 3.6rem;
+    padding: 15px;
+}
+#nav2 .fa:hover {
+    font-size: 3.8rem;
+    color: #f58f82;
 }

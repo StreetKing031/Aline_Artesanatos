@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quem Somos - Aline Artesanatos</title>
+    <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial scale=1.0" />
+        <link   rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+                integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" sizes="192x192" href="logo artesanato - versão final.png">
+        <link rel="manifest" href="logo artesanato - versão final.png">
+    <title>Aline Artesanatos</title>
     <link rel="stylesheet" href="styleQS.css">
+    <link rel="stylesheet" href="/geral.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="/Design/logo artesanato - versão final.png" alt="Logo Aline Artesanatos">
-        </div>
+        <div class="logo"> <a href="/home.html"><img src="/logo artesanato - versão final.png" alt="Logo"></a> </div>
+            <ul class="links"> 
+                <li><A href="/contato/index.html">CONTATO</A></li>
+                <li><a href="/quemsomos/indexQS.html">QUEM SOMOS</a></li>
+            </ul>
         <nav>
-            <a href="#contato">Contato</a>
-            <a href="#quem-somos">Quem Somos</a>
-            <a href="#inst">Inst</a>
-            <a href="#wpp">Wpp</a>
+            <div class="navbar">
+                <li class="box-busca">
+                        <form method="post" action="#">
+                                <input type="text" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa">
+                                <button class="search-box-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+
+                        </form>
+                    </li>
+            </div>
         </nav>
+        <div id="darkmode">
+            <input type="checkbox" class="checkbox" id="chk"/>
+            <label class="label" for="chk">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+            </label>   
+        </div>                        
     </header>
+    <div id="borda"></div> 
     <main>
         <section id="quem-somos">
             <div class="title">
@@ -62,17 +83,32 @@
                 <img src="/quemsomos/foto juntos.png" alt="Foto nossa juntos (talvez)">
             </div>
     </main>
+    <div id="borda"></div> 
     <footer>
-        <div class="footer-nav">
-            <a href="#inicio">Início</a>
-            <a href="#quem-somos">Quem Somos</a>
-            <a href="#produtos">Produtos</a>
-            <a href="#contato">Contato</a>
-        </div>
-        <div class="social-media">
-            <a href="#"><img src="instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="facebook.png" alt="Facebook"></a>
-        </div>
+            <nav id="nav1">
+                <ul id="produtos">
+                  <li><a href="/home.html">Inicio</a></li>
+                  <li><a href="/contato/index.html">Contato</a></li>
+                  <li><a href="/quemsomos/indexQS.html">Quem somos</a></li>
+                  <li>
+                    <ul>
+                        <li>Mandala</li>
+                        <li>Árvore da Vida</li>
+                        <li>Filtro dos Sonhos</li>
+                        <li>Bag Kelly</li>
+                    </ul>
+                  </li>
+                </ul>
+            </nav>
+            <div class="assinatura">
+                <p> Raul Antônio Horta Campos PDITA 307 <br> Hiago Espíndola Ambrósio PDITA 481</p>
+                <p>&copy; 2024 Aline Artesanatos</p> 
+            </div>
+            <nav id="nav2">
+                <a id="logo"><img src="/logo 160px - Artesanato.png" alt="Logo"></a> 
+            </nav>
+        <script src="/script.js"></script>
+        <script src="https://kit.fontawesome.com/d316ebf6c0.js" crossorigin="anonymous"></script>
     </footer>
 </body>
 </html>
