@@ -22,11 +22,12 @@ body {
 /* Header */
 header {
     height: 206px;
-    max-width: 1800px;
+    width: 90%;
+    margin-left: 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: black;
     padding: -10px;
     box-shadow: 0.5px 0.5px 10px 0.5px #000;
 }

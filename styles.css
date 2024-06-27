@@ -28,7 +28,7 @@ li {
 /* header */
 
 header {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,6 +52,70 @@ header .logo img {
     left: 20px
 }
 
+
+
+/* flex nos agrupamentos - barra de pesquisa --> */
+div.navbar > li > form, .box-busca,header>nav{
+    display: flex;
+}
+
+header>nav{
+    margin-right: 5%;/*afasta do canto*/
+}
+
+/* div que agrupa os elementos, está repetitivo - corrigir se houver tempo */
+.navbar {
+    width: 85%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+/* barra pesquisa */
+body > header > nav > div.navbar > li > form > input{
+    border-radius: 10%;
+    border-color:#63b79f;
+    height: 2rem;
+    font-size: 1rem;
+    text-align: left;
+
+
+}
+/*icone pesquisa */
+header > nav > div.navbar > li > form > button{
+    font-size: 20px;
+    padding-left: 5px; padding-right: 5px;
+    margin-left: -40px;
+
+    cursor: pointer;
+    color: #63b79f;
+    border:none;
+    background:none;
+    right: 0;
+}
+/*darkmode */
+#darkmode{
+    margin-right: 5%;
+}
+#darkmode > label > i {
+    /*botão*/
+    font-size: 20px;
+    color: #63b79f;
+    padding: 5px;
+    cursor: pointer; /* Adicione um cursor de ponteiro para indicar que é clicável */
+}
+
+#chk {
+    /* Ocultar o checkbox */
+    display: none;
+}
+
+.dark {
+    /*efeito escurecedor */
+    background-color: #263238;
+    color: #63b79f;
+}
+
+
 #borda {
     margin-left: 5%;
     width: 90%;
@@ -59,60 +123,12 @@ header .logo img {
     background-color: #f58f82;
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-/* navbar*/
-
-.navbar {
-    width: 85%;
-    height: 25vh;
-    max-width: 1200px;
-    font-size: 1rem;
-    font-variant: small-caps;
-    font-weight: bold;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
   
-i {
-      font-size: 1rem;
-      cursor: pointer;
-      color: #63b79f;
-}
-  
-#nav2 .fa:hover {
-    scale: 1.1;
-    color: #f58f82;
-}
-  
-.logo a img {
+#logo > img{
     width: 20vh;
     height: 20vh;
 }
-  
-.navbar  {
-    display: flex;
-    gap: 2rem;
-}
-  
+
 .links {
     margin-left: auto;
     margin-right: auto;
@@ -332,6 +348,10 @@ ul#contato {
     transform: translateY(-110%);
     font-size: 3.6rem;
 }
+#nav2 .fa:hover {
+    scale: 1.1;
+    color: #f58f82;
+}
   
 .footer_nav {
     width: 100%;
@@ -360,10 +380,7 @@ footer .social-media a img {
     display: flex;
 }
 
-.dark {
-    background-color: #263238;
-    color: #63b79f;
-}
+
 /* Desktop grande */
 @media (min-width: 1024px) {
     .hero {
@@ -390,4 +407,4 @@ footer .social-media a img {
     .hero {
         background-image: url(/banner-pequeno/BannerBag.png);
     }
-}
+}}
