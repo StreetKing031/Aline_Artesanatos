@@ -136,6 +136,7 @@ header > nav > div.navbar > li > form > button{
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
+    margin-bottom: 40px;
     overflow: auto;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
@@ -158,6 +159,7 @@ header > nav > div.navbar > li > form > button{
     width: fit-content;
     margin-left: auto; margin-right: auto;
     align-items: center;
+    text-align: center;
 }
 .product>p {
     margin-top: 5px;
@@ -194,7 +196,7 @@ header > nav > div.navbar > li > form > button{
 Para voltar o formato de box, remova os comentários a esquerda */
 
 #avaliacoes{
-    margin-top: 100px;
+    margin-bottom: 20vh;
     width: 100%;
 }
 .carousel-container {
@@ -202,6 +204,7 @@ Para voltar o formato de box, remova os comentários a esquerda */
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
+
 }
 
 /* Container interno do carrossel */
@@ -212,6 +215,7 @@ Para voltar o formato de box, remova os comentários a esquerda */
     /*overflow-x: scroll;
     scroll-behavior: smooth; /* Suaviza a rolagem */
     -webkit-overflow-scrolling: touch; /* Suporte para iOS */
+    gap: 10vw;
 }
 #avaliacoes{
     display: flex;
