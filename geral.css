@@ -20,10 +20,6 @@ body {
 
 }
 
-li {
-  list-style: none;
-}
-
 /* header */
 
 header {
@@ -62,6 +58,7 @@ div.navbar > li > form, .box-busca,header>nav{
   width: 20vw;
   align-items: center;
   justify-content: space-between;
+  margin: 30px;
 }
 /* barra pesquisa */
 body > header > nav > div.navbar > li > form > input{
@@ -70,7 +67,7 @@ body > header > nav > div.navbar > li > form > input{
   height: 2rem;
   font-size: 1rem;
   text-align: left;
-
+  width: 15vw;
 }
 /*icone pesquisa */
 header > nav > div.navbar > li > form > button{
@@ -84,6 +81,18 @@ header > nav > div.navbar > li > form > button{
   background:none;
   right: 0;
 }
+@media (max-width: 682px) {
+  .navbar{
+    width: 50px;
+    padding: 0;
+  }
+  .header > nav > div.navbar > li > form > button, nav > div > li > form > input {
+      min-width: 40px; max-width: 40px;
+      text-indent: -9999px;
+      overflow: hidden;
+  }
+}
+  
 /*darkmode */
 #darkmode{
   margin-right: 5%;

@@ -21,9 +21,6 @@ body > header > nav > div.navbar > li > form > input{
     height: 4rem;
     font-size: 1rem;
     text-align: left;
-    width: 15vw;
-
-
 }
 /*icone pesquisa */
 header > nav > div.navbar > li > form > button{
