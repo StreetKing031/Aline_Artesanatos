@@ -226,35 +226,23 @@ h3{
     margin-top: 40px;
 }
 /*texto*/
-.social-media,.visitantes,.textcontact{
+.social-media,.textcontact{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.contact-info p{
-    color: black;
-}
 .text1{
     color: #666;
     line-height: 1.4em;
-    text-indent: 2em;
     text-indent: 1.5em;
     text-align: center;
 }
-.social-media>p{
-    text-indent: 0;
-}
-.visitantes p:nth-child(3){
-    text-align: center;
-    font-style: italic;
-    color: #333;
-    margin-top: 40px;
-}
+
 /* ícones wpp instagram*/
 .icons {
     margin-top: 40px;
-    height: 72px;
+    height: 100px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -262,14 +250,14 @@ h3{
 }
 
 .icons a {
-    font-size: 50px;
+    font-size: 70px;
     color: #63B79F;
     padding: 2px;
     transition: 0.3s;
 }
 
 .icons a:hover {  
-    font-size: 70px;
+    font-size: 90px;
     transition: 0.3s;
 }
 
@@ -285,8 +273,3 @@ h3{
     color: #25D366;
 }
 /*fim icones*/
-/*ESPAÇO EM BRANCO */
-.visitantes{
-    margin-bottom: 300px;
-}
-

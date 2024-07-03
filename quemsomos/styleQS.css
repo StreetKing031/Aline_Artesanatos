@@ -9,6 +9,9 @@ h1 {
 }
 
 /* Inicio e Contato */
+.title{
+    margin-top: 5vh;
+}
 .subtitle{
     text-align: center;
     margin-right: 50px;
@@ -19,10 +22,14 @@ h1 {
     text-shadow:  1px 1px 2px #63B79F;
 }
 /* Texto principal */
+#quem-somos{
+    margin-bottom: 10vh;
+}
 #quem-somos p {
     text-align: center;
     text-indent: 2em;
-    font-size: 18px;
+    line-height: 1.51em;
+    font-size: 1.5em;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -32,6 +39,9 @@ h1 {
     display: inline-block;
     width: 100%;
     margin: auto;
+}
+.team > div:nth-child(2){
+    background-color: #f58f82;
 }
 
 .member {
