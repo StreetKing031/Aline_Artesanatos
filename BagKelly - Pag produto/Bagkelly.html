@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <script>
+        function navigateToPage() {
+            const pageName = document.getElementById('pageInput').value;
+            if (pageName) {
+                if (pageName.startsWith('Mandala')) {
+                    window.location.href = '/Mandala - Pag produto/' + pageName + '.html';
+                } else if (pageName.startsWith('BagKelly')) {
+                    window.location.href = '/BagKelly - Pag produto/' + pageName + '.html';
+                } else if (pageName.startsWith('Arvore da vida')) {
+                    window.location.href = '/Árvore da vida - Pag produto/' + pageName + '.html';
+                } else if (pageName.startsWith('Filtro dos Sonhos')) {
+                    window.location.href = '/Filtro dos Sonhos - Pag produto/' + pageName + '.html';
+                } else {
+                    alert('No matching page found.');
+                }
+            } else {
+                alert('Please enter a page name.');
+            }
+        }
+    </script>
     <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial scale=1.0" />
@@ -22,11 +42,8 @@
         <nav>
             <div class="navbar">
                 <li class="box-busca">
-                        <form method="post" action="#">
-                                <input type="text" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa">
-                                <button class="search-box-button"><i class="fa fa-search" aria-hidden="true"></i></button>
-
-                        </form>
+                    <input type="text" id="pageInput" placeholder="Faça sua pesquisa">
+                    <button onclick="navigateToPage()"><i class="fa fa-search" aria-hidden="true"></i></button>
                     </li>
             </div>
         </nav>

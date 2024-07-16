@@ -1,5 +1,5 @@
 /* flex nos agrupamentos - barra de pesquisa --> */
-div.navbar > li > form, .box-busca,header>nav{
+div.navbar > li > .box-busca,header>nav{
     display: flex;
 }
 
@@ -15,7 +15,7 @@ header>nav{
     justify-content: space-between;
 }
 /* barra pesquisa */
-body > header > nav > div.navbar > li > form > input{
+body > header > nav > div.navbar > li  > input{
     border-radius: 20%;
     border-color:#63b79f;
     height: 4rem;
@@ -23,7 +23,7 @@ body > header > nav > div.navbar > li > form > input{
     text-align: left;
 }
 /*icone pesquisa */
-header > nav > div.navbar > li > form > button{
+header > nav > div.navbar > li > button{
     font-size: 20px;
     padding-left: 5px; padding-right: 5px;
     margin-left: -40px;
