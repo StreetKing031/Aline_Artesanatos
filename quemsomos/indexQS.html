@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <script>
+        function navigateToPage() {
+            const pageName = document.getElementById('pageInput').value;
+            if (pageName) {
+                if (pageName.startsWith('Mandala')) {
+                    window.location.href = '/Mandala - Pag produto/' + pageName + '.html';
+                } else if (pageName.startsWith('BagKelly')) {
+                    window.location.href = '/BagKelly - Pag produto/' + pageName + '.html';
+                } else if (pageName.startsWith('Arvore da vida')) {
+                    window.location.href = '/Árvore da vida - Pag produto/' + pageName + '.html';
+                } else if (pageName.startsWith('Filtro dos Sonhos')) {
+                    window.location.href = '/Filtro dos Sonhos - Pag produto/' + pageName + '.html';
+                } else {
+                    alert('No matching page found.');
+                }
+            } else {
+                alert('Please enter a page name.');
+            }
+        }
+    </script>
     <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial scale=1.0" />
         <link   rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
                 integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
                 crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" sizes="192x192" href="logo artesanato - versão final.png">
-        <link rel="manifest" href="logo artesanato - versão final.png">
+        <link rel="icon" sizes="192x192" href="/logo.png">
+        <link rel="manifest" href="/logo.png">
     <title>Aline Artesanatos</title>
     <link rel="stylesheet" href="styleQS.css">
     <link rel="stylesheet" href="/geral.css">
 </head>
 <body>
     <header>
-        <div class="logo"> <a href="/home.html"><img src="/logo artesanato - versão final.png" alt="Logo"></a> </div>
+        <div class="logo"> <a href="/home.html"><img src="/logo.png" alt="Logo"></a> </div>
             <ul class="links"> 
                 <li><A href="/contato/index.html">CONTATO</A></li>
                 <li><a href="/quemsomos/indexQS.html">QUEM SOMOS</a></li>
@@ -23,11 +43,8 @@
         <nav>
             <div class="navbar">
                 <li class="box-busca">
-                        <form method="post" action="#">
-                                <input type="text" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa">
-                                <button class="search-box-button"><i class="fa fa-search" aria-hidden="true"></i></button>
-
-                        </form>
+                    <input type="text" id="pageInput" placeholder="Faça sua pesquisa">
+                    <button onclick="navigateToPage()"><i class="fa fa-search" aria-hidden="true"></i></button>
                     </li>
             </div>
         </nav>
@@ -109,7 +126,7 @@
                <a href="https://api.whatsapp.com/message/XX3A6ALZRBBBI1?autoload=1&app_absent=0"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
                <a href="https://www.instagram.com/alinegomesartesanatos/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </div>
-            <a id="logo"><img src="/logo 160px - Artesanato.png" alt="Logo"></a> 
+            <a id="logo"><img src="/logo.png" alt="Logo"></a> 
         </nav>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/d316ebf6c0.js" crossorigin="anonymous"></script>

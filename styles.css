@@ -177,18 +177,7 @@ header > nav > div.navbar > li > button{
     position: relative;
     bottom: -10px;
 }
-/* Media query para telas de 0 a 767 pixels de largura */
-@media (max-width: 767px) {
-    .products {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-    }
-    .product {
-        flex: 0 0 33.33%; /* Exibe dois produtos por vez */
-        background-color: rgba(255, 255, 255, 0);
-        align-self: center;        
-    }
-}
+
 
 
 /* Container do carrossel */
@@ -359,5 +348,14 @@ footer .social-media a img {
 @media (max-width: 767px) {
     .hero {
         background-image: url(/banner-pequeno/BannerBag.png);
+    }
+    .products {
+        flex-wrap: wrap;
+        overflow-x: auto;
+    }
+    .product {
+        flex: 0 0 33.33%; /* Exibe dois produtos por vez */
+        background-color: rgba(255, 255, 255, 0);
+        align-self: center;        
     }
 }

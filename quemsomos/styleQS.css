@@ -127,3 +127,42 @@ h1 {
     font-size: 3.8rem;
     color: #f58f82;
 }
+
+ /* flex nos agrupamentos - barra de pesquisa --> */
+ div.navbar > li > form, .box-busca,header>nav{
+    display: flex;
+  }
+  
+  header>nav{
+    margin-right: 5%;/*afasta do canto*/
+  }
+  
+  /* div que agrupa os elementos, está repetitivo - corrigir se houver tempo */
+  .navbar {
+    width: 85%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* barra pesquisa */
+  body > header > nav > div.navbar > li  > input{
+    border-radius: 10%;
+    border-color:#63b79f;
+    height: 2rem;
+    font-size: 1rem;
+    text-align: left;
+  
+  
+  }
+  /*icone pesquisa */
+  header > nav > div.navbar > li  > button{
+    font-size: 20px;
+    padding-left: 5px; padding-right: 5px;
+    margin-left: -40px;
+  
+    cursor: pointer;
+    color: #63b79f;
+    border:none;
+    background:none;
+    right: 0;
+  }

@@ -255,7 +255,7 @@ h1 {
     display: flex;
   }
   
-  header>nav{
+  header > nav{
     margin-right: 5%;/*afasta do canto*/
   }
   
