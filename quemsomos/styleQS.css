@@ -14,7 +14,6 @@ h1 {
 }
 .subtitle{
     text-align: center;
-    margin-right: 50px;
 }
 .subtitle a{
     text-decoration: none;
@@ -131,10 +130,6 @@ h1 {
  /* flex nos agrupamentos - barra de pesquisa --> */
  div.navbar > li > form, .box-busca,header>nav{
     display: flex;
-  }
-  
-  header>nav{
-    margin-right: 5%;/*afasta do canto*/
   }
   
   /* div que agrupa os elementos, está repetitivo - corrigir se houver tempo */
